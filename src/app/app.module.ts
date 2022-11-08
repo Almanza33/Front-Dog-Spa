@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { PackServiciosModule } from './packServicios/packServicios.module';
 import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
+import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module'
     AppRoutingModule,
     HttpClientModule,
     PackServiciosModule,
-    ServiciosDuenosModule
+    ServiciosDuenosModule,
+    HallOfFameModule
 
   ],
   providers: [],
