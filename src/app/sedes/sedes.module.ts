@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SedesComponent } from './sedes.component';
 import { SedesListComponent } from './sedes-list/sedes-list.component';
+import { SedeDetailComponent } from './sede-detail/sede-detail.component';
 
 @NgModule({
   imports: [
