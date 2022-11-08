@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { PackServiciosModule } from './packServicios/packServicios.module';
 import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
+import { SedesModule } from './sedes/sedes.module';
+import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
     HttpClientModule,
     PackServiciosModule,
     ServiciosDuenosModule,
-    HallOfFameModule
+    HallOfFameModule,
+    SedesModule,
+    ServiciosMascotasModule
 
   ],
   providers: [],
