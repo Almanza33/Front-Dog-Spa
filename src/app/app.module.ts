@@ -5,6 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { PackServiciosModule } from './packServicios/packServicios.module';
+import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +15,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PackServiciosModule,
+    ServiciosDuenosModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
