@@ -1,3 +1,20 @@
-<p>
-  sedes-list works!
-</p>
+<div class="Container-fluid">
+  <div class="col-md-2">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <th>
+          sede name
+        </th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let e of sedes">
+          <td>{{e.id}}</td>
+          <td>{{e.direccion}}</td>
+          <td>{{e.ciudad}}</td>
+          <td>{{e.telefono}}</td>
+          <td>{{e.horario}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

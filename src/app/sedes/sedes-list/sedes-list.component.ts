@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Sedes } from '../Sedes';
+import { SedesDetail } from '../Sedes-detail';
+import { SedesService } from '../sedes.service';
 
 @Component({
   selector: 'app-sedes-list',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SedesListComponent implements OnInit {
 
-  constructor() { }
+  sedes:  Array<SedesDetail> = [];
+
+  constructor(private route: ActivatedRoute,private sedesService: SedesService) { }
+
+  getSedes(): void {
+    this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes);
+  }
 
   ngOnInit() {
+  this.getSedes();
   }
 
 }
