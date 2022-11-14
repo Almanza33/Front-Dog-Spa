@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioMascotasDetail } from '../servicioMascotas-Detail';
+import { ServiciosMascotasService } from '../serviciosMascotas.service';
 
 @Component({
   selector: 'app-serviciosMascotas-list',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosMascotasListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private serviciosMascotasService: ServiciosMascotasService) { }
+  servicioMascotas:  Array<ServicioMascotasDetail> = [];
+  getServiciosMascotas(): void {
+    this.serviciosMascotasService.getServicioMascotas().subscribe(servicioMascotas => this.servicioMascotas=servicioMascotas);
+    };
+
 
   ngOnInit() {
+    this.getServiciosMascotas
   }
 
 }

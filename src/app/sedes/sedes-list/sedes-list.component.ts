@@ -15,7 +15,7 @@ export class SedesListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,private sedesService: SedesService) { }
 
-  getSedes(): void {
+  getSedes() {
     this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes);
   }
 
