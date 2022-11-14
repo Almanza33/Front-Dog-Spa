@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Perro } from 'src/app/perro/Perro';
 
 @Component({
   selector: 'app-perros-list',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PerrosListComponent implements OnInit {
 
   //TODO
-  //perros: Array<Perro> = [];
+  perros: Array<Perro> = [];
   constructor() { }
 
   ngOnInit() {

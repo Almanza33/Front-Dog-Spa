@@ -10,6 +10,7 @@ import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module'
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 import { SedesModule } from './sedes/sedes.module';
 import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.module';
+import { PerroComponent } from './perro/perro.component';
 
 @NgModule({
   declarations: [
