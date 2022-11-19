@@ -12,9 +12,9 @@ import { HallOfFameService } from '../hallOfFame.service';
 })
 export class PerrosListComponent implements OnInit {
 
-  //TODO
   hallOfFameId!: string;
   @Input() hallOfFameDetail!: HallOfFameDetail;
+
   constructor(
     private route: ActivatedRoute,
     private hallOfFameService: HallOfFameService

@@ -15,8 +15,8 @@ export class HallOfFameService {
 
   constructor(private http: HttpClient) { }
 
-  getAllHallsOfFame(): Observable<HallOfFame[]> {
-    return this.http.get<HallOfFame[]>(this.apiUrl);
+  getAllHallsOfFame(): Observable<HallOfFameDetail[]> {
+    return this.http.get<HallOfFameDetail[]>(this.apiUrl);
   }
 
   getHallOfFame(id:string): Observable<HallOfFameDetail> {

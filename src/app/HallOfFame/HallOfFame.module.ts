@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PerrosListComponent } from './perros-list/perros-list.component';
 import { RouterModule } from '@angular/router';
+import { HofListComponent } from './hof-list/hof-list.component';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule
   ],
-  declarations: [PerrosListComponent],
+  declarations: [PerrosListComponent,
+    HofListComponent],
   exports: [PerrosListComponent]
 })
 export class HallOfFameModule { }
