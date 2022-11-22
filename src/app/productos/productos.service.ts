@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { ProductoDetail } from './producto-Detail';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,11 +12,11 @@ export class ProductosService{
 
   constructor(private http: HttpClient) {}
 
-  getproducto(): Observable<ProductoDetail[]> {
-    return this.http.get<ProductoDetail[]>(this.apiUrl);
-  }
+ // getproducto(): Observable<Producto[]> {
+ //   return this.http.get<Producto[]>(this.apiUrl);
+ // }
 
-  getServicioMascota(id: string): Observable<ProductoDetail> {
-    return this.http.get<ProductoDetail>(this.apiUrl + '/' + id);
-  }
+  //getServicioMascota(id: string): Observable<Producto> {
+  //  return this.http.get<Producto>(this.apiUrl + '/' + id);
+  //}
 }
