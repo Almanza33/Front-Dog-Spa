@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductosDetail } from '../productos-Detail';
 import { ProductosService } from '../Productos.service';
 
 @Component({
@@ -10,14 +9,14 @@ import { ProductosService } from '../Productos.service';
 export class ProductosListComponent implements OnInit {
 
   constructor(private serviciosMascotasService: ProductosService) { }
-  servicioMascotas:  Array<ProductoDetail> = [];
-  getServiciosMascotas(): void {
-    this.serviciosMascotasService.getProducto().subscribe(producto => this.producto=productos);
-    };
+ // servicioMascotas:  Array<ProductoDetail> = [];
+ // getServiciosMascotas(): void {
+ //   this.serviciosMascotasService.getProducto().subscribe(producto => this.producto=productos);
+ //   };
 
 
-  ngOnInit() {
-    this.getProductos
-  }
+ // ngOnInit() {
+ //  this.getProductos
+ // }
 
 }

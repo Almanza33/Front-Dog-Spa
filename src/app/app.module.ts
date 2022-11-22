@@ -13,6 +13,8 @@ import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.m
 
 import { PerroModule } from './perro/perro.module';
 
+import {ProductosModule} from './productos/productos.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,7 +28,8 @@ import { PerroModule } from './perro/perro.module';
     HallOfFameModule,
     SedesModule,
     ServiciosMascotasModule,
-    PerroModule
+    PerroModule,
+    ProductosModule
 
   ],
   providers: [],

@@ -15,6 +15,12 @@ export class AppComponent {
   }
   goToPerro() {
     this.router.navigate(['/', 'perro']);
+
+  }
+
+  goToProductos() {
+    this.router.navigate(['/', 'productos']);
+
   }
   goToHalls() {
     this.router.navigate(['/', 'halls'])
