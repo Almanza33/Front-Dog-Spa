@@ -5,13 +5,16 @@ import { RouterModule } from '@angular/router';
 import { HofListComponent } from './hof-list/hof-list.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule
   ],
-  declarations: [PerrosListComponent,
-    HofListComponent],
-  exports: [PerrosListComponent]
+  declarations: [	PerrosListComponent,
+    HofListComponent
+   ],
+  exports: [PerrosListComponent,
+  HofListComponent]
 })
 export class HallOfFameModule { }

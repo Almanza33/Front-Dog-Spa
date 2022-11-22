@@ -16,5 +16,8 @@ export class AppComponent {
   goToPerro() {
     this.router.navigate(['/', 'perro']);
   }
+  goToHalls() {
+    this.router.navigate(['/', 'halls'])
+  }
 
 }
