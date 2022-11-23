@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { packServicios } from '../PackServicios';
+import { packServiciosDetail } from '../PackServicios-detail';
 import { PackServiciosService } from '../packServicios.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { PackServiciosService } from '../packServicios.service';
 })
 export class PackServiciosListComponent implements OnInit {
 
-  packs: Array<packServicios> = [];
+  packs: Array<packServiciosDetail> = [];
 
   constructor(private packService: PackServiciosService) { }
 
