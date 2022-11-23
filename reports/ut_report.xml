@@ -1,5 +1,1 @@
-<testExecutions version="1">
-  <file path="src/app/serviciosDuenos/serviciosDuenos-list/serviciosDuenos-list.component.spec.ts">
-    <testCase name="ServiciosDuenosListComponent should create" duration="68"/>
-  </file>
-</testExecutions>
+<testExecutions version="1"/>
