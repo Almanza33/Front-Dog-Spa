@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { packServicios } from '../packServicios';
+import { packServicios } from '../PackServicios';
 import { PackServiciosService } from '../packServicios.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class PackServiciosListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getPacks;
+    this.getPacks();
   }
 
 }

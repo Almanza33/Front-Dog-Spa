@@ -6,8 +6,8 @@ import {ofertaSedeService } from '../ofertaSede.service';
 
 @Component({
   selector: 'app-ofertaSede-list',
-  templateUrl: './ofertaSede-list.component.html',
-  styleUrls: ['./ofertaSede-list.component.css']
+  templateUrl: './packOfertas-list.component.html',
+  styleUrls: ['./packOfertas-list.component.css']
 })
 export class ofertaSedeListComponent implements OnInit {
 

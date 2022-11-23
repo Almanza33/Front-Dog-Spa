@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SedesComponent } from './sedes/sedes.component';
 import { PerroComponent } from './perro/perro.component';
 import { ServiciosDuenosComponent } from './serviciosDuenos/serviciosDuenos.component';
-import { PackServiciosComponent } from './packServicios/packServicios.component';
+import { PackServiciosModule } from './packServicios/packServicios.module';
 import {ProductosComponent} from './productos/productos.component';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent},
   { path: 'halls', component: HofListComponent},
   { path: 'serviciosDuenos', component: ServiciosDuenosComponent},
-  { path: 'packServicios', component: PackServiciosComponent}
+  { path: 'packServicios', component: PackServiciosModule}
 
 ]
 ;
