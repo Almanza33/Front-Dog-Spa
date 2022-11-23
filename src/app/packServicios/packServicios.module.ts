@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PackServiciosComponent } from './packServicios.component';
+import {PackServiciosListComponent } from './packServicios-list/packServicios-list.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [PackServiciosComponent]
+  exports: [PackServiciosListComponent],
+  declarations: [PackServiciosListComponent]
 })
 export class PackServiciosModule { }
