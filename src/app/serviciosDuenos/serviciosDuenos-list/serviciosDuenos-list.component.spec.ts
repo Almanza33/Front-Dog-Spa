@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ServiciosDuenosListComponent } from './serviciosDuenos-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('ServiciosDuenosListComponent', () => {
   let component: ServiciosDuenosListComponent;
