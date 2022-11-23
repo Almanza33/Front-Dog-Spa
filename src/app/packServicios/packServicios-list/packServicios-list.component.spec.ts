@@ -22,7 +22,4 @@ describe('PackServiciosListComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

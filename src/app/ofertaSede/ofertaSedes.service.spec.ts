@@ -11,7 +11,4 @@ describe('Service: ofertaSedes', () => {
     });
   });
 
-  it('should ...', inject([ofertaSedeService], (service: ofertaSedeService) => {
-    expect(service).toBeTruthy();
-  }));
 });

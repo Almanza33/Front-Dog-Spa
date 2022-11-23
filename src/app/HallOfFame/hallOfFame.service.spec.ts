@@ -10,7 +10,4 @@ describe('Service: HallOfFame', () => {
     });
   });
 
-  it('should ...', inject([HallOfFameService], (service: HallOfFameService) => {
-    expect(service).toBeTruthy();
-  }));
 });
