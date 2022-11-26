@@ -1,35 +1,36 @@
 <div class="panel-body">
   <div class="border margin p-3">
-    <p class="h3 p-2">{{ hallOfFameDetail?.nombre }}</p>
-    <div class="row">
+    <p class="h3 p-2">Mira lo felices que se ven los perritos del {{ hallOfFameDetail?.nombre }}!</p>
+
+
+    <div class="card-group" *ngFor="let perro of hallOfFameDetail?.perros">
 
 
 
-      <div class="col-10">
-        <div class="row">
-          <div
-            class="card p-2 mb-2"
-            style="width: 7rem; height: 10rem"
-            *ngFor="let perro of hallOfFameDetail?.perros"
-          >
-            <img
-              class="card-img-top"
-              src="{{ perro.fotoAntes }}"
-              alt="{{ perro.nombre }}"
-            />
-            <img
-              class="card-img-top"
-              src="{{ perro.fotodespues }}"
-              alt="{{ perro.nombre }}"
-            />
+
+            <div class="row">
+                <div class="card col-md-4">
+                    <img class="card-img-top" src= "{{perro.fotoAntes}}" alt="{{ perro.fotoAntes }}">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Este es el peque {{perro.nombre}} antes del Servicio</h5>
+
+                    </div>
+                </div>
+
+                <div class="card col-md-4">
+                  <img class="card-img-top" src= "{{perro.fotodespues}}" alt="alt 2">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Este es el peque {{perro.nombre}} después del Servicio</h5>
+
+                    </div>
+                </div>
 
 
-          </div>
+            </div>
         </div>
-      </div>
 
 
-
-    </div>
   </div>
 </div>
