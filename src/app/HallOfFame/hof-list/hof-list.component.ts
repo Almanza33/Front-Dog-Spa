@@ -13,7 +13,17 @@ export class HofListComponent implements OnInit {
   selectedHof!: HallOfFameDetail;
   selected: boolean = false;
 
+
+  searchText:string = '';
+
   constructor(private hofService: HallOfFameService) { }
+
+
+  onSearchTextEntered(searchValue:string){
+    this.searchText = searchValue;
+    //console.log(this.searchText);
+
+  }
 
   getHofs(){
     this.hofService.getAllHallsOfFame().subscribe(hofs=>{

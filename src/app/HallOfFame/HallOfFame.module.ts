@@ -3,16 +3,20 @@ import { CommonModule } from '@angular/common';
 import { PerrosListComponent } from './perros-list/perros-list.component';
 import { RouterModule } from '@angular/router';
 import { HofListComponent } from './hof-list/hof-list.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   declarations: [	PerrosListComponent,
-    HofListComponent
+    HofListComponent,
+    SearchComponent
    ],
   exports: [PerrosListComponent,
   HofListComponent]
