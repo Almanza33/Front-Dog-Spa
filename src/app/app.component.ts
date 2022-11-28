@@ -26,4 +26,7 @@ export class AppComponent {
     this.router.navigate(['/', 'halls'])
   }
 
+  goToOfertas() {
+    this.router.navigate(['/', 'ofertaSede'])
+  }
 }
