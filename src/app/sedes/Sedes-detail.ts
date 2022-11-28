@@ -8,8 +8,7 @@ export class SedesDetail extends Sedes{
   ciudad: string,
   telefono: number,
   horario: string,
-  redesSociales: string,
-  hallOfFame: HallOfFame){
-super(id,direccion,ciudad,telefono,horario,redesSociales,hallOfFame);
+  redesSociales: string){
+super(id,direccion,ciudad,telefono,horario,redesSociales);
     }
 }

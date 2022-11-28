@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   goToProductos() {
-    this.router.navigate(['/', 'productos']);
+    this.router.navigate(['/', 'producto']);
 
   }
   goToHalls() {

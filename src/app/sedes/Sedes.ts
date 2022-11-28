@@ -7,7 +7,6 @@ export class Sedes {
   telefono: number;
   horario: string;
   redesSociales: string;
-  hallOfFame: HallOfFame;
 
   constructor(
     id:number,
@@ -16,7 +15,6 @@ export class Sedes {
     telefono: number,
     horario: string,
     redesSociales: string,
-    hallOfFame: HallOfFame
   ) {
     this.id = id;
     this.direccion = direccion;
@@ -24,6 +22,5 @@ export class Sedes {
     this.telefono = telefono;
     this.horario = horario;
     this.redesSociales = redesSociales;
-    this.hallOfFame = hallOfFame;
   }
 }

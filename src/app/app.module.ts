@@ -12,8 +12,8 @@ import { SedesModule } from './sedes/sedes.module';
 import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.module';
 
 import { PerroModule } from './perro/perro.module';
+import { ProductoModule } from './producto/producto.module';
 
-import {ProductoModule} from './productos/producto.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
