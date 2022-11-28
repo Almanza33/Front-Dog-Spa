@@ -5,7 +5,7 @@ import { ProductoService } from './producto.service';
 
 
 @Component({
-  selector: 'app-productos',
+  selector: 'app-producto',
   templateUrl: './producto.component.html',
   styleUrls: ['./producto.component.css']
 })

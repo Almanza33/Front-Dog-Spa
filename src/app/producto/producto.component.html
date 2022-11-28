@@ -1,5 +1,4 @@
 <div *ngIf="selected">
-  <!--<app-producto [producto]="selectedProducto"></app-producto> -->
 </div>
 
 <hr />
@@ -7,17 +6,16 @@
 <div class="container-fluid">
   <div class="row">
     <div *ngFor="let producto of productos" class="col mb-2">
-      <div class="card p-2" style="width: 15rem; height: 33rem">
-        <img
-          class="card-img-top"
+      <div class="card p-2" style="width: 15rem; height: 15rem">
 
-          alt="{{ producto.nombre }}"
-          alt="{{ producto.precio }}"
-          (click)="onSelected(producto)"
-        />
+
         <div class="card-body">
           <h5 class="card-title">{{ producto.nombre }}</h5>
-          <!--<p class="card-text">[{{ producto.sedes.nombre }}]</p> -->
+          <h4 class="card-text">{{ producto.precio }}</h4>
+          <h4 class="card-text">{{ producto.id }}</h4>
+
+
+
         </div>
       </div>
     </div>
