@@ -1,35 +1,43 @@
-<div class="panel-body">
-  <div class="border margin p-3">
-    <p class="h3 p-2">Mira lo felices que se ven los perritos del {{ hallOfFameDetail?.nombre }}!</p>
+<div class="panel-body cuerpo">
+  <div class=" p-3 completo  justify-content-center">
+    <p class="h7 p-2 text-center display-4 titulo">Mira lo felices que se ven los perritos del {{ hallOfFameDetail?.nombre }}!</p>
 
 
-    <div class="card-group" *ngFor="let perro of hallOfFameDetail?.perros">
+    <div class="col text-center">
+      <div class="card-group " *ngFor="let perro of hallOfFameDetail?.perros">
+
+              <div class="row mx-auto">
 
 
+                <h2 class="card-title text-center nini">Este es el peque {{perro.nombre}} </h2>
 
 
-            <div class="row">
-                <div class="card col-md-4">
-                    <img class="card-img-top" src= "{{perro.fotoAntes}}" alt="{{ perro.fotoAntes }}">
+                  <div class="card col-md-6 cuerpoCarta">
+                      <img class="card-img-top" src= "{{perro.fotoAntes}}" alt="{{ perro.fotoAntes }}">
 
-                    <div class="card-body">
-                        <h5 class="card-title">Este es el peque {{perro.nombre}} antes del Servicio</h5>
+                      <div class="card-body">
+                          <h5 class="card-title">{{perro.nombre}} antes del Servicio.</h5>
 
-                    </div>
-                </div>
+                      </div>
+                  </div>
 
-                <div class="card col-md-4">
-                  <img class="card-img-top" src= "{{perro.fotodespues}}" alt="alt 2">
+                  <div class="card col-md-6 cuerpoCarta">
+                    <img class="card-img-top" src= "{{perro.fotoDespues}}" alt="{{perro.fotoDespues}}">
 
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Este es el peque {{perro.nombre}} después del Servicio</h5>
+                      <div class="card-body ">
+                          <h5 class="card-title">{{perro.nombre}} después del Servicio.</h5>
 
-                    </div>
-                </div>
+                      </div>
+                  </div>
 
 
-            </div>
-        </div>
+              </div>
+
+              <br><br>
+
+      </div>
+    </div>
+
 
 
   </div>

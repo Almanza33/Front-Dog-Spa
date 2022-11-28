@@ -1,5 +1,29 @@
 img {
-  height: 150px;
+  height: 350px;
   width: auto;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.completo{
+  border-radius: 5px;
+  background-color: #CE94BC;
+  border-color: black;
+
+}
+.cuerpo{
+  padding-right: 25px;
+}
+.titulo{
+  text-size-adjust: 50%;
+}
+
+.nini{
+  background-color: #DBBFDB;
+  border-radius: 5px;
+}
+
+.cuerpoCarta{
+  background-color: #DBBFDB;
 }

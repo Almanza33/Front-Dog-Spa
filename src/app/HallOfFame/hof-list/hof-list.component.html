@@ -1,26 +1,30 @@
-<div class="container-fluid mt-2">
-  <h2 class="text-center">Halls Of Fame</h2>
+<div class="container-fluid mt-2 fondo border">
+  <h2 class="text-center display-4">Halls Of Fame</h2>
 
   <div class="row">
-    <div class="col-3">
+    <div class="col-2 hofs">
       <app-search  (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+      <br>
       <div *ngFor="let hof of hofs" class="book-card">
-        <div class="card p-2 mb-2" style="width: 12rem; height: 23rem"  *ngIf=" searchText === ''  || hof.nombre.toLowerCase().includes(searchText)" >
-          <a
-            class="card-block text-decoration-none"
+        <div class="card p-2 mb-2" style="width: 12rem; height: 15rem"  *ngIf=" searchText === ''  || hof.nombre.toLowerCase().includes(searchText)" >
+
+            <div class="card-body black-text text-center">
+              <h5 class="card-title">{{ hof.nombre }}</h5>
+              <a
+            class="card-block text-decoration-none text-center"
             (click)="selectHof(hof)"
           >
-            <div class="card-body black-text">
-              <h5 class="card-title">{{ hof.nombre }}</h5>
-              <p class="card-text">
-                Donde los perritos son muy felices
+              <p class="btn btn-light border-dark">
+                Ver HoF
               </p>
+              </a>
             </div>
-          </a>
+
+          <div class="card-footer border-dark">Donde los perritos son muy felices :)</div>
         </div>
       </div>
     </div>
-    <div class="col-9" *ngIf="selected">
+    <div class="col-10" *ngIf="selected">
       <app-perros-list [hallOfFameDetail]="selectedHof"></app-perros-list>
     </div>
   </div>
