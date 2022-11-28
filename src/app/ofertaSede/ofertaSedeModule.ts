@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ofertaSedesListComponent } from './ofertaSedes-list/ofertaSedes-list.component';
+import { ofertaSedeComponent } from './ofertaSede.component';
+import { ofertaSedeListComponent } from './ofertaSede-list/packofertas-list.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -8,7 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,RouterModule,ReactiveFormsModule
   ],
-  declarations: [ofertaSedesListComponent],
-  exports: [ofertaSedesListComponent]
+  declarations: [ofertaSedeListComponent],
+  exports: [ofertaSedeListComponent]
 })
 export class SedesModule { }

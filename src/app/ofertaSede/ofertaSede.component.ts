@@ -9,7 +9,7 @@ export class ofertaSedeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
