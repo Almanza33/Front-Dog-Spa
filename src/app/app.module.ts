@@ -13,7 +13,7 @@ import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.m
 
 import { PerroModule } from './perro/perro.module';
 
-import {ProductosModule} from './productos/productos.module';
+import {ProductosModule} from './productos/producto.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

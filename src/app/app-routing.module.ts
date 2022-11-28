@@ -4,7 +4,7 @@ import { SedesComponent } from './sedes/sedes.component';
 import { PerroComponent } from './perro/perro.component';
 import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
 import { PackServiciosModule } from './packServicios/packServicios.module';
-import {ProductosComponent} from './productos/productos.component';
+import {ProductosComponent} from './productos/producto.component';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 
 import { HofListComponent } from './HallOfFame/hof-list/hof-list.component';
