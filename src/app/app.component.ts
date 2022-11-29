@@ -29,4 +29,12 @@ export class AppComponent {
   goToOfertas() {
     this.router.navigate(['/', 'ofertas'])
   }
+
+  goToPacks() {
+    this.router.navigate(['/', 'packs'])
+  }
+
+  goToServiciosDuenos() {
+    this.router.navigate(['/', 'serviciosDuenos'])
+  }
 }
