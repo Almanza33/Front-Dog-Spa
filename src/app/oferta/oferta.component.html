@@ -1,3 +1,20 @@
-<p>
-  oferta works!
-</p>
+<div *ngIf="selected">
+</div>
+
+<hr />
+
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let oferta of ofertas" class="col mb-2">
+      <div class="card p-2" style="width: 15rem; height: 15rem">
+
+
+        <div class="card-body">
+          <h5 class="card-title">{{ oferta.nombre }}</h5>
+          <h4 class="card-text">{{ oferta.precio }}</h4>
+          <h4 class="card-text">{{ oferta.id }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

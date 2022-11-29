@@ -6,6 +6,7 @@ import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module'
 import { PackServiciosListComponent } from './packServicios/packServicios-list/packServicios-list.component';
 import { ServiciosDuenosListComponent } from './serviciosDuenos/serviciosDuenos-list/serviciosDuenos-list.component';
 import { ProductoComponent } from './producto/producto.component';
+import { OfertaComponent } from './oferta/oferta.component';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 
 import { HofListComponent } from './HallOfFame/hof-list/hof-list.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'producto', component: ProductoComponent},
   { path: 'halls', component: HofListComponent},
   { path: 'packs', component: PackServiciosListComponent},
-  { path: 'serviciosDuenos', component: ServiciosDuenosListComponent}
+  { path: 'serviciosDuenos', component: ServiciosDuenosListComponent},
+  { path: 'ofertas', component: OfertaComponent}
 
 ]
 ;

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { OfertaDetail } from '../oferta-detail';
+import { OfertaService } from '../oferta.service';
 
 @Component({
   selector: 'app-oferta-detail',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfertaDetailComponent implements OnInit {
 
+  bookId!: string;
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+

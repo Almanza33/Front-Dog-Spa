@@ -16,6 +16,7 @@ import { ProductoModule } from './producto/producto.module';
 
 import { FormsModule } from '@angular/forms';
 import { PackRoutingModule } from './packServicios/pack-routing.module';
+import { OfertaModule } from './oferta/oferta.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PackRoutingModule } from './packServicios/pack-routing.module';
     PerroModule,
     ProductoModule,
     PackRoutingModule,
-    FormsModule
+    FormsModule,
+    OfertaModule
 
 
   ],
