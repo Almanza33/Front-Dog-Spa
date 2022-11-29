@@ -16,10 +16,13 @@
   background-color: #B6B5D8;
   border-radius: 4px;
   border-color: black;
+
 }
 .btn{
   align-self: center;
   background-color: #877BAE;
+  width: max-content;
+  height: min-content;
 }
 
 .hofs{
