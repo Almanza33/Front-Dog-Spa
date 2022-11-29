@@ -5,15 +5,20 @@ import { ProductoComponent } from './producto.component';
 import { RouterModule } from '@angular/router';
 import { productoRoutingModule } from './producto.routing';
 
+import {FormsModule} from '@angular/forms'
+import { SearchComponent } from './search/search.component';
+
+
 
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    productoRoutingModule
+    productoRoutingModule,
+    FormsModule
   ],
   exports: [ProductoComponent],
-  declarations: [ProductoComponent]
+  declarations: [ProductoComponent,SearchComponent]
 })
 export class ProductoModule { }

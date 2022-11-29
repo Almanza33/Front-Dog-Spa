@@ -14,8 +14,16 @@ export class ProductoComponent implements OnInit {
   productos: Array<Producto> = [];
   selected: Boolean = false;
   selectedProducto!: Producto;
+  searchText:string = '';
 
   constructor(private productoService: ProductoService) { }
+
+  onSearchTextEntered(searchValue:string){
+    this.searchText = searchValue;
+    //console.log(this.searchText);
+
+  }
+
 
   getProductos():void{
     this.productoService.getProductos().subscribe((productos) =>{
@@ -27,6 +35,7 @@ export class ProductoComponent implements OnInit {
     this.selected = true;
     this.selectedProducto = producto;
   }
+
 
 
 
