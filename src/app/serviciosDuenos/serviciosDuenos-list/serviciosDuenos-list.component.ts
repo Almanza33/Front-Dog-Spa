@@ -9,9 +9,16 @@ import { ServiciosDuenos } from '../ServiciosDuenos';
 })
 export class ServiciosDuenosListComponent implements OnInit {
 
+  selected: Boolean = false;
+  selectedService!: ServiciosDuenos;
   serviciosDuenos: Array<ServiciosDuenos> = [];
 
   constructor(private servicioDuenosService: ServicioDuenosService) { }
+
+  onSelected(servicioDuenos: ServiciosDuenos): void {
+    this.selected = true;
+    this.selectedService = servicioDuenos;
+  }
 
   getServiciosDuenos(): void {
     this.servicioDuenosService.getServiciosDuenos().subscribe((serviciosDuenos) => {

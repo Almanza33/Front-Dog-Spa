@@ -10,8 +10,15 @@ import { PackServiciosService } from '../packServicios.service';
 export class PackServiciosListComponent implements OnInit {
 
   packs: Array<packServiciosDetail> = [];
+  selected: Boolean = false;
+  selectedPack!: packServiciosDetail;
 
   constructor(private packService: PackServiciosService) { }
+
+  onSelected(packServiciosdetail: packServiciosDetail): void {
+    this.selected = true;
+    this.selectedPack = packServiciosdetail;
+  }
 
   getPacks(): void {
     this.packService.getPacks().subscribe((packs) => {

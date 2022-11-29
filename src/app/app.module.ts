@@ -15,6 +15,7 @@ import { PerroModule } from './perro/perro.module';
 import { ProductoModule } from './producto/producto.module';
 
 import { FormsModule } from '@angular/forms';
+import { PackRoutingModule } from './packServicios/pack-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,12 +27,15 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     PackServiciosModule,
     ServiciosDuenosModule,
+    ServiciosDuenosModule,
     HallOfFameModule,
     SedesModule,
     ServiciosMascotasModule,
     PerroModule,
     ProductoModule,
+    PackRoutingModule,
     FormsModule
+
 
   ],
   providers: [],

@@ -15,5 +15,7 @@ constructor(private http: HttpClient) { }
 getPacks(): Observable<packServiciosDetail[]> {
   return this.http.get<packServiciosDetail[]>(this.apiUrl);
 }
-
+getPack(id: string): Observable<packServiciosDetail> {
+  return this.http.get<packServiciosDetail>(this.apiUrl + "/" + id);
+}
 }
