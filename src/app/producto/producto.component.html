@@ -3,16 +3,30 @@
 
 <hr />
 
+<div class="container-fluid mt-2 fondo border">
+  <h2 class="text-center display-4">Productos De Todas Las Sedes </h2>
+
+
+      <br>
+      <app-search  (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+      <br>
+
 <div class="container-fluid">
   <div class="row">
+
     <div *ngFor="let producto of productos" class="col mb-2">
-      <div class="card p-2" style="width: 15rem; height: 15rem">
+      <div class="card p-2" style="width: 15rem; height: 15rem"  *ngIf=" searchText === ''  || producto.nombre.toLowerCase().includes(searchText)">
 
 
         <div class="card-body">
           <h5 class="card-title">{{ producto.nombre }}</h5>
-          <h4 class="card-text">{{ producto.precio }}</h4>
-          <h4 class="card-text">{{ producto.id }}</h4>
+          <br>
+          <br>
+          <h4  class="card-text"> Precio: ${{ producto.precio }}</h4>
+          <br>
+          <h6 class="card-text"> id del producto: {{ producto.id }}</h6>
+
+
 
 
 
