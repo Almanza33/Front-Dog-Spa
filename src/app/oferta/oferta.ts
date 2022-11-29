@@ -1,12 +1,22 @@
+import { Sedes } from "../sedes/Sedes";
 
-export class ofertaSede {
-  oferta:string; 
+export class Oferta {
+  id:number;
+  descripcion:string;
   precio:number;
+  nombre:string;
+  sede:Sedes
   constructor(
-    oferta:string,
-    precio:number
+    id:number,
+    descripcion:string,
+    precio:number,
+    nombre:string,
+    sede:Sedes
   ) {
-    this.oferta=oferta;
+    this.id=id;
+    this.descripcion=descripcion;
     this.precio=precio;
+    this.nombre=nombre;
+    this.sede=sede;
   }
 }

@@ -15,6 +15,7 @@ import { PerroModule } from './perro/perro.module';
 import { ProductoModule } from './producto/producto.module';
 
 import { FormsModule } from '@angular/forms';
+import { OfertaModule } from './oferta/oferta.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     ServiciosMascotasModule,
     PerroModule,
     ProductoModule,
-    FormsModule
+    FormsModule,
+    OfertaModule
 
   ],
   providers: [],

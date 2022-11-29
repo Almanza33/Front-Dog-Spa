@@ -5,6 +5,7 @@ import { PerroComponent } from './perro/perro.component';
 import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
 import { PackServiciosModule } from './packServicios/packServicios.module';
 import { ProductoComponent } from './producto/producto.component';
+import { OfertaComponent } from './oferta/oferta.component';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 
 import { HofListComponent } from './HallOfFame/hof-list/hof-list.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'producto', component: ProductoComponent},
   { path: 'halls', component: HofListComponent},
   { path: 'serviciosDuenos', component: ServiciosDuenosModule},
-  { path: 'packServicios', component: PackServiciosModule}
+  { path: 'packServicios', component: PackServiciosModule},
+  { path: 'packOfertas', component: OfertaComponent}
 
 ]
 ;
