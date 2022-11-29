@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'halls', component: HofListComponent},
   { path: 'serviciosDuenos', component: ServiciosDuenosModule},
   { path: 'packServicios', component: PackServiciosModule},
-  { path: 'packOfertas', component: OfertaComponent}
+  { path: 'ofertas', component: OfertaComponent}
 
 ]
 ;
