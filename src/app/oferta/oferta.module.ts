@@ -5,13 +5,17 @@ import { OfertaComponent } from './oferta.component';
 import { RouterModule } from '@angular/router';
 import { ofertaRoutingModule } from './oferta.routing';
 
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    ofertaRoutingModule
+    ofertaRoutingModule,
+    FormsModule
   ],
   exports: [OfertaComponent],
-  declarations: [OfertaComponent]
+  declarations: [OfertaComponent, SearchComponent]
 })
 export class OfertaModule {}

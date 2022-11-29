@@ -1,5 +1,27 @@
-img {
-  height: 350px;
-  width: auto;
-  max-width: 400px;
+.black-text {
+  color: black;
+}
+
+.card {
+  background-color:#DBBFDB ;
+}
+
+.h2 {
+  color: #B6B5D8;
+  font-family:'Monaco';
+
+}
+
+.fondo {
+  background-color: #B6B5D8;
+  border-radius: 4px;
+  border-color: black;
+}
+.btn{
+  align-self: center;
+  background-color: #877BAE;
+}
+
+.hofs{
+  padding-left: 35px;
 }

@@ -12,8 +12,14 @@ export class OfertaComponent implements OnInit {
   ofertas: Array<Oferta> = [];
   selected: Boolean = false;
   selectedOferta!: Oferta;
+  searchText:string = '';
 
   constructor(private ofertaService: OfertaService) { }
+
+  onSearchTextEntered(searchValue:string){
+    this.searchText = searchValue;
+
+  }
 
   getOfertas():void{
     this.ofertaService.getOfertas().subscribe((ofertas) =>{

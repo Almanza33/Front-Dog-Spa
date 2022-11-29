@@ -3,19 +3,29 @@
 
 <hr />
 
+<div class="container-fluid mt-2 fondo border">
+  <h2 class="text-center display-4">Ofertas De Todas Las Sedes </h2>
+
+
+      <br>
+      <app-search  (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+      <br>
+
 <div class="container-fluid">
   <div class="row">
+
     <div *ngFor="let oferta of ofertas" class="col mb-2">
-      <div class="card p-2" style="width: 15rem; height: 15rem">
+      <div class="card p-2" style="width: 15rem; height: 15rem"  *ngIf=" searchText === ''  || oferta.nombre.toLowerCase().includes(searchText)">
 
 
         <div class="card-body">
-          <h5 class="card-title">{{ oferta.nombre }}</h5>
-          <h4 class="card-text">{{ oferta.precio }}</h4>
-          <h4 class="card-text">{{ oferta.id }}</h4>
-          <h6 class="card-text">{{ oferta.descripcion }}</h6>
+          <h3 class="card-title"> {{ oferta.id }} <p>  </p>{{ oferta.nombre }}</h3>
+          <h4 class="card-text"><p>Precio: {{ oferta.precio }}</p></h4>
+          <h4 class="card-text">{{oferta.descripcion}}</h4>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
