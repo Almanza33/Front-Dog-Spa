@@ -1,5 +1,5 @@
 <testExecutions version="1">
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="71"/>
+    <testCase name="AppComponent should create the app" duration="61"/>
   </file>
 </testExecutions>

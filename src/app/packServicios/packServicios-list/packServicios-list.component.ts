@@ -15,7 +15,7 @@ export class PackServiciosListComponent implements OnInit {
 
   getPacks(): void {
     this.packService.getPacks().subscribe((packs) => {
-      this.packs = packs;
+      this.packs = packs.slice(1,packs.length);
     });
   }
 

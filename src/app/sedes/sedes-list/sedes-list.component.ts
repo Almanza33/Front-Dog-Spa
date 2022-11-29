@@ -16,7 +16,7 @@ export class SedesListComponent implements OnInit {
   constructor(private route: ActivatedRoute,private sedesService: SedesService) { }
 
   getSedes() {
-    this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes);
+    this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes.slice(1,sedes.length));
   }
 
   ngOnInit() {
