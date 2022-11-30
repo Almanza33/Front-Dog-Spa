@@ -1,4 +1,4 @@
-<div class="Container-fluid">
+<!-- <div class="Container-fluid">
   <div class="col-md-2">
     <table class="table table-striped">
       <thead class="thead-dark">
@@ -17,4 +17,94 @@
       </tbody>
     </table>
   </div>
-</div>
+</div> -->
+
+<div class="contenedor">
+
+  <div class="container-fluid">
+    <div class="col-6">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="h4">id</th>
+            <th class="h4">direccion</th>
+            <th class="h4">ciudad</th>
+            <th class="h4">telefono</th>
+            <th class="h4">horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of sedes">
+            <td>
+              <dd>{{c.id}}</dd>
+            </td>
+            <td>
+              <dd>{{c.direccion}}</dd>
+            </td>
+            <td>
+              <dd>{{c.ciudad}}</dd>
+            </td>
+            <td>
+              <dd>{{c.telefono}}</dd>
+            </td>
+            <td>
+              <dd>{{c.horario}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div *ngIf="selected">
+  </div>
+
+  <hr />
+
+  <div class="container-fluid mt-2 fondo border">
+    <h2 class="text-center display-4">Productos De Todas Las Sedes </h2>
+
+
+        <br>
+        <app-BusquedaComponent  (searchTextChanged)="onSearchTextEntered($event)"></app-BusquedaComponent>
+        <br>
+
+  <table class="container-fluid">
+    <thead>
+      <tr>
+        <th class="h4">id</th>
+        <th class="h4">direccion</th>
+        <th class="h4">ciudad</th>
+        <th class="h4">telefono</th>
+        <th class="h4">horario</th>
+      </tr>
+    </thead>
+    <tbody class="row">
+
+      <div *ngFor="let c of sedes" class="col mb-2">
+        <div class="card p-2" style="width: 15rem; height: 15rem"  *ngIf=" searchText === ''  || c.ciudad.toLowerCase().includes(searchText)">
+
+
+          <td>
+            <dd>{{c.id}}</dd>
+          </td>
+          <td>
+            <dd>{{c.direccion}}</dd>
+          </td>
+          <td>
+            <dd>{{c.ciudad}}</dd>
+          </td>
+          <td>
+            <dd>{{c.telefono}}</dd>
+          </td>
+          <td>
+            <dd>{{c.horario}}</dd>
+
+
+
+          </div>
+        </div>
+      </tbody>
+    </table>
+  </div>

@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Sedes } from './Sedes';
 import { SedesDetail } from './Sedes-detail';
 
 const API_URL='../../asserts/'
