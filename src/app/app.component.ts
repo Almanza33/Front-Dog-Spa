@@ -10,6 +10,10 @@ export class AppComponent {
 
   constructor(private router: Router) {
   }
+
+  goToInicio(){
+    this.router.navigate(['/', 'inicio']);
+  }
   goToSedes() {
     this.router.navigate(['/', 'sedes']);
   }
@@ -36,5 +40,9 @@ export class AppComponent {
 
   goToServiciosDuenos() {
     this.router.navigate(['/', 'serviciosDuenos'])
+  }
+
+  ngOnInit() {
+    this.goToInicio();
   }
 }

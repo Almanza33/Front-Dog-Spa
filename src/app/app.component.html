@@ -2,14 +2,17 @@
 <div class="container-fluid">
   <div class="row">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #877BAE">
-      <div class="container-fluid">
-        <a class="navbar-brand">DogSpa</a>
+
+        <a class="navbar-brand" href="inicio" style = "position:relative; left:10px;" >
+          <img class="logo" src="../favicon.ico" width="50" height="50" alt="LogoDogSpa">
+          DogSpa
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Aqui empiezan los botones de la barra de navegacion-->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style = "position:relative; right:10px;">
           <ul class="navbar-nav ms-auto">
               <a class="nav-link" aria-expanded="false" (click)="goToSedes()">Sedes</a>
 
@@ -45,12 +48,112 @@
 
           </ul>
         </div>
-      </div>
     </nav>
   </div>
-
-  <!-- Main Router Outlet -->
-  <div class="row" id="principal">
-    <router-outlet></router-outlet>
-  </div>
 </div>
+
+    <!-- Main Router Outlet -->
+    <div class="row" id="principal">
+      <router-outlet></router-outlet>
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #877BAE">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Acerca de nosotros</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Sedes</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Halls Of Fame</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Ayuda</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contacto</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p class="text-center">
+                "Para ti y para tu perro"
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2022 Copyright:
+        <a class="text-white"
+           >DogSpa</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
