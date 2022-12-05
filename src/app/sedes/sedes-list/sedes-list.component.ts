@@ -11,14 +11,28 @@ import { SedesService } from '../sedes.service';
 })
 export class SedesListComponent implements OnInit {
 
-  sedes:  Array<SedesDetail> = [];
+  sedes: Array<SedesDetail> = [];
+  selected: Boolean = false;
+  selectedSedes!: SedesDetail;
+  searchText:string = '';
 
   constructor(private route: ActivatedRoute,private sedesService: SedesService) { }
 
-  getSedes() {
-    this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes.slice(1,sedes.length));
-  }
+  // getSedes() {
+  //   this.sedesService.getSedes().subscribe(sedes => this.sedes=sedes.slice(1,sedes.length));
+  // }
+  onSearchTextEntered(searchValue:string){
+    this.searchText = searchValue;
+    //console.log(this.searchText);
 
+  }
+  getSedes() {
+    this.sedesService.getSedes().subscribe({next: sedes => this.sedes = sedes , error: e => console.error(e) });
+  }
+  onSelected(sedesDetail: SedesDetail): void{
+    this.selected = true;
+    this.selectedSedes = sedesDetail;
+  }
   ngOnInit() {
   this.getSedes();
   }

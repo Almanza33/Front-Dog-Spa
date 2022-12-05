@@ -15,6 +15,9 @@ import { PerroModule } from './perro/perro.module';
 import { ProductoModule } from './producto/producto.module';
 
 import { FormsModule } from '@angular/forms';
+import { PackRoutingModule } from './packServicios/pack-routing.module';
+import { ServiciosDuenosRoutingModule } from './serviciosDuenos/serviciosDuenos-routing.module';
+import { OfertaModule } from './oferta/oferta.module';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,17 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     PackServiciosModule,
     ServiciosDuenosModule,
+    ServiciosDuenosModule,
     HallOfFameModule,
     SedesModule,
     ServiciosMascotasModule,
     PerroModule,
     ProductoModule,
-    FormsModule
+    PackRoutingModule,
+    ServiciosDuenosRoutingModule,
+    FormsModule,
+    OfertaModule
+
 
   ],
   providers: [],

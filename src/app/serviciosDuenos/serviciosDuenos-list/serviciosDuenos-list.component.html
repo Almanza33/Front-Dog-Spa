@@ -1,12 +1,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col mb-2" *ngFor="let servicios of serviciosDuenos">
-          <div class="card p-2" style="width: 15rem; height: 33rem">
+          <div class="card p-2">
               <div class="card-body">
-                <h5 class="card-title">{{ servicios.nombre }}</h5>
+                <h5 class="card-title" (click)="onSelected(servicios)" class="t1">{{ servicios.nombre }}</h5>
                   <p class="card-text">{{ servicios.precio }}</p>
               </div>
            </div>
       </div>
    </div>
 </div>
+<div *ngIf="selected">
+  <app-serviciosDuenos-detail [servicioDetail]="selectedService"></app-serviciosDuenos-detail>
+</div>
+
