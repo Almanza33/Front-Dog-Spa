@@ -1,5 +1,23 @@
 <testExecutions version="1">
+  <file path="src/app/oferta/oferta.service.spec.ts">
+    <testCase name="Service: Oferta should ..." duration="20"/>
+  </file>
+  <file path="src/app/producto/producto.service.spec.ts">
+    <testCase name="Service: Producto should ..." duration="3"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="61"/>
+    <testCase name="AppComponent should create the app" duration="30"/>
+  </file>
+  <file path="src/app/HallOfFame/search/search.component.spec.ts">
+    <testCase name="SearchComponent should create" duration="12"/>
+  </file>
+  <file path="src/app/HallOfFame/perros-list/perros-list.component.spec.ts">
+    <testCase name="PerrosListComponent should create" duration="21"/>
+    <testCase name="PerrosListComponent should have a p.h7.p-2 element with HallOfFame.name" duration="9"/>
+  </file>
+  <file path="src/app/HallOfFame/hof-list/hof-list.component.spec.ts">
+    <testCase name="HofListComponent should create" duration="22"/>
+    <testCase name="HofListComponent Should have 10 div.book-card elements" duration="12"/>
+    <testCase name="HofListComponent should have a h2 title" duration="10"/>
   </file>
 </testExecutions>
