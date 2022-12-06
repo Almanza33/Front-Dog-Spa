@@ -1,7 +1,7 @@
 <!-- Navigation bar -->
 <div class="container-fluid">
   <div class="row">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #877BAE">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #49306B">
 
         <a class="navbar-brand" href="inicio" style = "position:relative; left:10px;" >
           <img class="logo" src="../favicon.ico" width="50" height="50" alt="LogoDogSpa">
@@ -14,35 +14,68 @@
         <!-- Aqui empiezan los botones de la barra de navegacion-->
         <div class="collapse navbar-collapse" id="navbarNav" style = "position:relative; right:10px;">
           <ul class="navbar-nav ms-auto">
-              <a class="nav-link" aria-expanded="false" (click)="goToSedes()">Sedes</a>
-
+              <a class="nav-link" aria-expanded="false" role="button" (click)="goToSedes()" style="font-weight: bold;">Sedes</a>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToPerro()">Perros</a>
             </li>
+            <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
 
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToHalls()">Halls Of Fame</a>
             </li>
+            <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
 
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToProductos()">Productos</a>
             </li>
-
+            <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToOfertas()">Ofertas</a>
             </li>
+            <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
 
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToPacks()">Packs</a>
             </li>
-
+            <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
             <li class="nav-item dropdown">
-              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bold;"
                 aria-expanded="false" (click)="goToServiciosDuenos()">Servicios para dueños</a>
             </li>
 
@@ -56,7 +89,6 @@
     <div id="principal">
       <router-outlet></router-outlet>
     </div>
-
     <footer class="text-center text-white" style="background-color: #877BAE">
       <!-- Grid container -->
       <div class="container">
@@ -67,7 +99,24 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Acerca de nosotros</a>
+                <a role="button" class="text-white">Acerca de nosotros</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2" (click)="goToSedes()">
+              <h6 class="text-uppercase font-weight-bold">
+                <a role="button" class="text-white">Sedes</a>
+              </h6>
+            </div>
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a role="button" class="text-white" (click)="goToHalls()">Halls Of Fame</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -75,7 +124,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Sedes</a>
+                <a role="button" class="text-white">Ayuda</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -83,23 +132,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Halls Of Fame</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Ayuda</a>
-              </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Contacto</a>
+                <a role="button" class="text-white">Contacto</a>
               </h6>
             </div>
             <!-- Grid column -->
