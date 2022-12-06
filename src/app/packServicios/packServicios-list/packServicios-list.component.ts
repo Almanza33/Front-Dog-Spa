@@ -26,6 +26,14 @@ export class PackServiciosListComponent implements OnInit {
     });
   }
 
+  ordenar(tipo: number): void{
+    this.packService.getPacks().subscribe((packs) => {
+      if (tipo==1){
+        this.packs = packs.slice(1,packs.length);
+      }
+    });
+  }
+
   ngOnInit() {
     this.getPacks();
   }

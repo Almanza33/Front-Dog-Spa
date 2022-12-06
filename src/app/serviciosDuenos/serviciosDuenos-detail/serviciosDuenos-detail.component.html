@@ -1,14 +1,18 @@
-<div class="container-fluid">
-  <p class="h3 p-3">{{ servicioDetail.nombre }}</p>
+
+ <div class="container bootstrap snippets bootdeys">
   <div class="row">
-    <div class="col-2">
-      <p class="h3 p-3">{{ servicioDetail.precio }}</p>
-    </div>
-    <div class="col">
-      <dl>
-        <dt class="bold">Descripcion</dt>
-        <dd>{{servicioDetail.descripcion}}</dd>
-      </dl>
-    </div>
+
+      <div class="col-md-4 col-sm-6 content-card">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                  <div class="content">
+                      <h6 class="category">Detalle de un servicio para dueños</h6>
+                      <h4 class="title" role="button" style="font-size: 180%;">{{servicioDetail.nombre}}</h4>
+                      <p class="description">Precio: ${{servicioDetail.precio}}</p>
+                      <p class="description">Descripcion: {{servicioDetail.descripcion}}</p>
+
+              </div> <!-- end card -->
+          </div>
+      </div>
+
   </div>
- </div>

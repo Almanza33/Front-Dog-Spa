@@ -1,15 +1,21 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let pack of packs">
-          <div class="card p-2">
-              <div class="card-body">
-                <h5 class="card-title" (click)="onSelected(pack)"  class="t1">{{ pack.nombre }}</h5>
-                  <p class="card-text">{{ pack.precio }}</p>
-              </div>
-           </div>
-      </div>
-   </div>
-</div>
 <div *ngIf="selected">
   <app-pack-detail [packDetail]="selectedPack"></app-pack-detail>
 </div>
+
+<div class="container bootstrap snippets bootdeys">
+  <div class="row">
+
+      <div class="col-md-4 col-sm-6 content-card" *ngFor="let pack of packs" (click)="onSelected(pack)">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                  <div class="content">
+                      <h6 class="category">Paquetes de servicios</h6>
+                      <h4 class="title" role="button" style="font-size: 180%;">{{pack.nombre}}</h4>
+                      <p class="description">Precio: ${{pack.precio}}</p>
+                  </div>
+              </div> <!-- end card -->
+          </div>
+      </div>
+
+  </div>
+  </div>

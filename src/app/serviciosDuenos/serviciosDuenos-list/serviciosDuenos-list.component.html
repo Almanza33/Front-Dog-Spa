@@ -1,16 +1,21 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let servicios of serviciosDuenos">
-          <div class="card p-2">
-              <div class="card-body">
-                <h5 class="card-title" (click)="onSelected(servicios)" class="t1">{{ servicios.nombre }}</h5>
-                  <p class="card-text">{{ servicios.precio }}</p>
-              </div>
-           </div>
-      </div>
-   </div>
-</div>
 <div *ngIf="selected">
   <app-serviciosDuenos-detail [servicioDetail]="selectedService"></app-serviciosDuenos-detail>
 </div>
+<div class="container bootstrap snippets bootdeys">
+  <div class="row">
+
+      <div class="col-md-4 col-sm-6 content-card" *ngFor="let servicios of serviciosDuenos" (click)="onSelected(servicios)">
+          <div class="card-big-shadow">
+              <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                  <div class="content">
+                      <h6 class="category">Servicio para dueños</h6>
+                      <h4 class="title" role="button" style="font-size: 180%;">{{servicios.nombre}}</h4>
+                      <p class="description">Precio: ${{servicios.precio}}</p>
+                  </div>
+              </div> <!-- end card -->
+          </div>
+      </div>
+
+  </div>
+  </div>
 
