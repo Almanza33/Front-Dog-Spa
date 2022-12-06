@@ -29,7 +29,9 @@ export class PackServiciosListComponent implements OnInit {
   ordenar(tipo: number): void{
     this.packService.getPacks().subscribe((packs) => {
       if (tipo==1){
-        this.packs = packs.slice(1,packs.length);
+        this.packs = packs.slice(1,packs.length).sort((a,b) => (a.nombre > b.nombre) ? 1 : ((b.nombre > a.nombre) ? -1 : 0));
+      }else if(tipo==2){
+        this.packs = packs.slice(1,packs.length).sort((a,b) => (a.precio > b.precio) ? 1 : ((b.precio > a.precio) ? -1 : 0));
       }
     });
   }
