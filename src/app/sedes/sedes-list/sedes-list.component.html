@@ -1,42 +1,6 @@
 
 <div class="contenedor">
 
-  <!-- <div class="container-fluid">
-    <div class="col-6">
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="h4">id</th>
-            <th class="h4">direccion</th>
-            <th class="h4">ciudad</th>
-            <th class="h4">telefono</th>
-            <th class="h4">horario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let c of sedes">
-            <td>
-              <dd>{{c.id}}</dd>
-            </td>
-            <td>
-              <dd>{{c.direccion}}</dd>
-            </td>
-            <td>
-              <dd>{{c.ciudad}}</dd>
-            </td>
-            <td>
-              <dd>{{c.telefono}}</dd>
-            </td>
-            <td>
-              <dd>{{c.horario}}</dd>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  </div> -->
-
   <div *ngIf="selected">
   </div>
 
@@ -51,15 +15,6 @@
         <br>
 
   <table class="container-fluid">
-    <!-- <thead>
-      <tr>
-        <th class="h4">id</th>
-        <th class="h4">direccion</th>
-        <th class="h4">ciudad</th>
-        <th class="h4">telefono</th>
-        <th class="h4">horario</th>
-      </tr>
-    </thead> -->
     <tbody class="row">
 
       <div *ngFor="let c of sedes" class="col mb-2">

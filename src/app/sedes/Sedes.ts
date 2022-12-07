@@ -1,4 +1,3 @@
-import { HallOfFame } from "../HallOfFame/HallOfFame";
 
 export class Sedes {
   id:number;
