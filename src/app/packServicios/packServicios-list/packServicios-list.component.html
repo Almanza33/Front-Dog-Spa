@@ -3,7 +3,9 @@
   <app-pack-detail [packDetail]="selectedPack"></app-pack-detail>
 </div>
 <div class="container">
-	<h4 style="color: white;">Ordenar: </h4>
+	<h6 style="color: white;">Ordenar por: </h6>
+  <button (click)="ordenar(1)" class="button"> Nombre</button>
+  <button (click)="ordenar(2)" class="button"> Precio</button>
 </div>
 
 <div class="container bootstrap snippets bootdeys">

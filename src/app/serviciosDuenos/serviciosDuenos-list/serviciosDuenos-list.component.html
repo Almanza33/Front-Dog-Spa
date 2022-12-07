@@ -1,6 +1,12 @@
 <div *ngIf="selected">
   <app-serviciosDuenos-detail [servicioDetail]="selectedService"></app-serviciosDuenos-detail>
 </div>
+<div class="container">
+	<h6 style="color: white;">Ordenar por: </h6>
+  <button (click)="ordenar(1)" class="button"> Nombre</button>
+  <button (click)="ordenar(2)" class="button"> Precio</button>
+</div>
+
 <div class="container bootstrap snippets bootdeys">
   <div class="row">
 

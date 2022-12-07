@@ -26,6 +26,16 @@ export class ServiciosDuenosListComponent implements OnInit {
     });
   }
 
+  ordenar(tipo: number): void{
+    this.servicioDuenosService.getServiciosDuenos().subscribe((servicio) => {
+      if (tipo==1){
+        this.serviciosDuenos = servicio.sort((a,b) => (a.nombre > b.nombre) ? 1 : ((b.nombre > a.nombre) ? -1 : 0));
+      }else if(tipo==2){
+        this.serviciosDuenos = servicio.sort((a,b) => (a.precio > b.precio) ? 1 : ((b.precio > a.precio) ? -1 : 0));
+      }
+    });
+  }
+
   ngOnInit() {
     this.getServiciosDuenos();
   }
