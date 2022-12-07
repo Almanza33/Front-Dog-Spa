@@ -14,9 +14,6 @@ const sedes='Sedes.json'
 export class SedesService {
   private apiUrl: string = environment.baseUrl + 'sedes';
 constructor(private http:HttpClient) { }
-  // getSedes():Observable<Sedes[]> {
-  //   return this.http.get<Sedes[]>(API_URL+sedes)
-  // }
 
   getSedes(): Observable<SedesDetail[]> {
     return this.http.get<SedesDetail[]>(this.apiUrl);
