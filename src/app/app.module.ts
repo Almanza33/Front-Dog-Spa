@@ -9,7 +9,6 @@ import { PackServiciosModule } from './packServicios/packServicios.module';
 import { ServiciosDuenosModule } from './serviciosDuenos/serviciosDuenos.module';
 import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 import { SedesModule } from './sedes/sedes.module';
-import { ServiciosMascotasModule } from './serviciosMascotas/serviciosMascotas.module';
 
 import { PerroModule } from './perro/perro.module';
 import { ProductoModule } from './producto/producto.module';
@@ -19,6 +18,7 @@ import { PackRoutingModule } from './packServicios/pack-routing.module';
 import { ServiciosDuenosRoutingModule } from './serviciosDuenos/serviciosDuenos-routing.module';
 import { OfertaModule } from './oferta/oferta.module';
 import { InicioModule } from './inicio/inicio.module';
+import { ServiciosMascotasModule } from './ServiciosMascotas/ServiciosMascotas.module';
 
 @NgModule({
   declarations: [
@@ -31,9 +31,9 @@ import { InicioModule } from './inicio/inicio.module';
     PackServiciosModule,
     ServiciosDuenosModule,
     ServiciosDuenosModule,
+    ServiciosMascotasModule,
     HallOfFameModule,
     SedesModule,
-    ServiciosMascotasModule,
     PerroModule,
     ProductoModule,
     PackRoutingModule,

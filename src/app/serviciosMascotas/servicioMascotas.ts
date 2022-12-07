@@ -1,11 +1,19 @@
+import { Sedes } from "../sedes/Sedes";
+import { packServicios } from "../packServicios/PackServicios";
 export class ServicioMascotas {
-
-  precio: number;
+  id: number;
   nombre: string;
+  descripcion: string;
+  precio: number;
+  sede:Sedes;
+  pack:packServicios;
 
-  constructor(precio: number, nombre: string) {
-    this.precio = precio;
+  public constructor(id:number, nombre: string, descripcion: string, precio:number, sede:Sedes, pack: packServicios) {
+    this.id = id;
     this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.precio = precio;
+    this.sede = sede;
+    this.pack = pack;
   }
-
 }

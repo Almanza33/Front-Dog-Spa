@@ -1,7 +1,7 @@
 import { Sedes } from "../sedes/Sedes";
 import { packServicios } from "./PackServicios";
-import {ServicioMascotas} from '../serviciosMascotas/servicioMascotas';
 import {ServiciosDuenos} from '../serviciosDuenos/ServiciosDuenos';
+import { ServicioMascotas } from "../ServiciosMascotas/servicioMascotas";
 
 export class packServiciosDetail extends packServicios {
   serviciosMascotas: Array<ServicioMascotas>;

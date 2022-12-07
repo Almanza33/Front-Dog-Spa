@@ -1,27 +1,7 @@
-<!-- <div class="Container-fluid">
-  <div class="col-md-2">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <th>
-          sede name
-        </th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let e of sedes">
-          <td>{{e.id}}</td>
-          <td>{{e.direccion}}</td>
-          <td>{{e.ciudad}}</td>
-          <td>{{e.telefono}}</td>
-          <td>{{e.horario}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div> -->
 
 <div class="contenedor">
 
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="col-6">
       <table class="table">
         <thead>
@@ -55,7 +35,7 @@
       </table>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <div *ngIf="selected">
   </div>
@@ -63,7 +43,7 @@
   <hr />
 
   <div class="container-fluid mt-2 fondo border">
-    <h2 class="text-center display-4">Productos De Todas Las Sedes </h2>
+    <h2 class="text-center display-4">Sedes </h2>
 
 
         <br>
@@ -71,7 +51,7 @@
         <br>
 
   <table class="container-fluid">
-    <thead>
+    <!-- <thead>
       <tr>
         <th class="h4">id</th>
         <th class="h4">direccion</th>
@@ -79,7 +59,7 @@
         <th class="h4">telefono</th>
         <th class="h4">horario</th>
       </tr>
-    </thead>
+    </thead> -->
     <tbody class="row">
 
       <div *ngFor="let c of sedes" class="col mb-2">
@@ -87,19 +67,19 @@
 
 
           <td>
-            <dd>{{c.id}}</dd>
+            <dd>id:{{c.id}}</dd>
           </td>
           <td>
-            <dd>{{c.direccion}}</dd>
+            <dd>direccion:{{c.direccion}}</dd>
           </td>
           <td>
-            <dd>{{c.ciudad}}</dd>
+            <dd>direccion:{{c.ciudad}}</dd>
           </td>
           <td>
-            <dd>{{c.telefono}}</dd>
+            <dd>telefono:{{c.telefono}}</dd>
           </td>
           <td>
-            <dd>{{c.horario}}</dd>
+            <dd>horario:{{c.horario}}</dd>
 
 
 

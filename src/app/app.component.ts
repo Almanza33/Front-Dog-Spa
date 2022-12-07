@@ -42,6 +42,10 @@ export class AppComponent {
     this.router.navigate(['/', 'serviciosDuenos'])
   }
 
+  goToServiciosMascotas() {
+    this.router.navigate(['/', 'serviciosMascotas'])
+  }
+
   ngOnInit() {
     this.goToInicio();
   }

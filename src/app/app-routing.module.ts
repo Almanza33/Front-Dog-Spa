@@ -12,6 +12,7 @@ import { HallOfFameModule } from './HallOfFame/HallOfFame.module';
 import { HofListComponent } from './HallOfFame/hof-list/hof-list.component';
 import { PerrosListComponent } from './HallOfFame/perros-list/perros-list.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ServicioMascotasListComponent } from './ServiciosMascotas/ServicioMascotas-list/ServicioMascotas-list.component';
 
 const routes: Routes = [
   { path: 'sedes', component: SedesComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'packs', component: PackServiciosListComponent},
   { path: 'serviciosDuenos', component: ServiciosDuenosListComponent},
   { path: 'ofertas', component: OfertaComponent},
-  { path: 'inicio', component: InicioComponent}
+  { path: 'inicio', component: InicioComponent},
+  { path: 'serviciosMascotas', component: ServicioMascotasListComponent}
 
 ]
 ;
