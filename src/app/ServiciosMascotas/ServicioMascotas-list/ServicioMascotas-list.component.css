@@ -133,3 +133,16 @@ a:hover, a:focus {
 .card[data-color="orange"] .category {
   color: #e95e37;
 }
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #baa9ba;
+	border: none;
+	margin-right: 1%;
+	font-family: inherit;
+  color: white;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+  border-radius: 5%;
+}

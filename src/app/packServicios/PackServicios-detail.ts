@@ -3,6 +3,8 @@ import { packServicios } from "./PackServicios";
 import {ServiciosDuenos} from '../serviciosDuenos/ServiciosDuenos';
 import { ServicioMascotas } from "../ServiciosMascotas/servicioMascotas";
 
+
+
 export class packServiciosDetail extends packServicios {
   serviciosMascotas: Array<ServicioMascotas>;
   serviciosDuenos: Array<ServiciosDuenos>;
